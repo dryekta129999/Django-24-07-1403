@@ -23,8 +23,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" aria-current="page" href="{% url 'blog:namayeshpost' %}">Home</a>
+                <a class="nav-link" href="{% url 'blog:new_post' %}">New Post</a>
             </div>
         </div>
         <div class="mx-2 text-white">Welcome</div>
