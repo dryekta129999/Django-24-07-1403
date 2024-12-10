@@ -10,3 +10,7 @@ https://i3center.com/teacher/saleh-hajian/
 
 
 
+درباره استاد :
+تسلط در طراحی و کد نویسی و امنیت بانک اطلاعاتی SQL (Postgresql,sqlite,MongoDB)
+تسلط به برنامه نویسی اپلیکیشن موبایل فلاتر
+تسلط به برنامه نویسی Asp.net (Core , MVC)
