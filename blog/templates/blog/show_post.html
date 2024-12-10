@@ -8,16 +8,21 @@ POST Title
 
 {% block content %}
 	<h1>Welcome to my page for Show posts</h1>
+
+
      <div class="card shadow-sm my-3">
+
+                 {% for post in posts %}
+
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted small py-2">2 Sep 2021</h6>
-                    <p class="card-text py-3">
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
-                    </p>
+                    <h5 class="card-title">{{ post.title }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted small py-2">{{ post.created_date }}</h6>
+
                     <div class="btn btn-sm btn-success">Read More</div>
                 </div>
+
+    {% endfor %}
+
             </div>
+
 {% endblock %}

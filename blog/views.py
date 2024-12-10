@@ -1,11 +1,12 @@
 from xml.etree.ElementInclude import include
-
+from .models import Post
 from django.shortcuts import render
 
 # Create your views here.
 
 def show_post(request):
-	return render(request, 'blog/show_post.html')
+	posts = Post.objects.all()
+	return render(request, 'blog/show_post.html', {'posts': posts})
 
 
 
