@@ -10,8 +10,9 @@ def show_post(request):
 
 
 
-def detail_post(request):
-	return render(request, 'blog/detail.html')
+def detail_post(request,id):
+	post = Post.objects.get(id=id)
+	return render(request, 'blog/detail.html', {'post': post})
 
 
 def new_post(request):

@@ -18,7 +18,7 @@ POST Title
                     <h5 class="card-title">{{ post.title }}</h5>
                     <h6 class="card-subtitle mb-2 text-muted small py-2">{{ post.created_date }}</h6>
 
-                    <div class="btn btn-sm btn-success">Read More</div>
+                    <a href="{% url 'blog:detail' post.id %}" class="btn btn-sm btn-success">Read More</a>
                 </div>
 
     {% endfor %}
